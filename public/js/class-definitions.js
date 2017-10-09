@@ -1,3 +1,5 @@
+//jshint esversion: 6
+
 /* Step 1
  *
  * Declare a variable named "unicorn"
@@ -5,6 +7,7 @@
  *
  */
 
+const unicorn = null;
 
 /* Step 2
  *
@@ -13,6 +16,7 @@
  *
  */
 
+const videogame_system = "Atari";
 
 /* Step 3
  *
@@ -21,6 +25,7 @@
  *
  */
 
+const sahara_animal = "The Addax";
 
 /* Step 4
  *
@@ -30,6 +35,7 @@
  * Capitalize the names.
  */
 
+const planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune' ];
 
 /* Step 5
  *
@@ -39,6 +45,7 @@
  *
  */
 
+const galilean_moons = ['Io', 'Europa', 'Ganymede', 'Callisto'];
 
 /* Step 6 φ
  *
@@ -47,6 +54,7 @@
  *
  */
 
+const golden_ratio = 1.61803398874;
 
 /* Step 7
  *
@@ -55,6 +63,7 @@
  *
  */
 
+const earths_water_composition = 0.71;
 
 /* Step 8
  *
@@ -63,6 +72,7 @@
  *
  */
 
+const club_name = "Fight Club";
 
 /* Step 9
  *
@@ -74,6 +84,11 @@
  *   unknown => undefined
  */
 
+const gender = {
+  female: "female",
+  male: "male",
+  unkonwn: undefined
+};
 
 /* Step 10
  *
@@ -88,6 +103,12 @@
  *
  */
 
+const princess_leia = {
+  name: "Leia Organa",
+  money: 890,
+  age: 20,
+  gender: gender.female
+};
 
 /* Step 11
  *
@@ -101,6 +122,12 @@
  *
  */
 
+const domains = {
+  "ycombinator.com": "198.41.190.47",
+  "laughingsquid.com": "162.159.247.97",
+  "slumlordhosting.com": "198.61.179.126",
+  "jsonformatter.curiousconcept.com": "104.28.5.70"
+};
 
 /* Step 12
  *
@@ -116,6 +143,14 @@
  *
  */
 
+const browsers = {
+  Chromium: "google.com",
+  Safari: "apple.com",
+  Opera: "opera.com",
+  Firefox: "mozilla.org",
+  Sleipnir: "fenrir-inc.com",
+  Konqueror: "konqueror.org"
+};
 
 /* Step 13
  *
@@ -134,6 +169,18 @@
  *
  */
 
+const rainbow = {
+  colors:{
+    red: "#F0280A",
+    orange: "#FF8800",
+    yellow: "#FFDD00",
+    green: "#51AB0C",
+    blue: "#1593ED",
+    indigo: "#5215ED",
+    violet: "#A915ED",
+  },
+  isDouble: true
+};
 
 /* Step 14
  *
@@ -149,6 +196,7 @@
  *
  */
 
+const linuxFlavors = ["Gentoo", "Fedora", "Debian", "Slackware", "Red Hat", "Bieber Linux"];
 
 /* Step 15
  *
@@ -163,6 +211,7 @@
  *
  */
 
+const DNA = ["nucleatides", "guanine", "adenine", "thymine", "cytosine"];
 
 /* Step 16
  *
@@ -175,6 +224,13 @@
  * Surface      => 320
  *
  */
+
+ const laptopCosts = {
+  MacBook: 1500,
+  Alienware: 2500,
+  HP: 499,
+  Surface: 320
+ };
 
 
 /* Step 17
@@ -192,6 +248,7 @@
  *
  */
 
+const livingOrganismClassification = ["Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species"];
 
 /* Step 18
  *
@@ -206,6 +263,7 @@
  *
  */
 
+const scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
 
 /* Step 19
  *
@@ -225,6 +283,14 @@
  *
  */
 
+const beers = {
+  IPA: "Ale",
+  Lager: "Strong",
+  Heffeweisen: "German",
+  Stout: ["Thick", "Dark"],
+  Porter: "Bitter",
+  Ale: ["Light", "Golden"]
+  };
 
 /* Step 20
  *
@@ -235,6 +301,9 @@
  *
  */
 
+function sahara_river(){
+  return 'Nile River';
+}
 
 /* Step 21
  *
@@ -247,6 +316,9 @@
  *
  */
 
+function addNumbers(num1, num2) {
+  return num1 + num2;
+}
 
 /* Step 22
  *
@@ -260,6 +332,13 @@
  *
  */
 
+function installLinux(str) {
+  if (linuxFlavors.includes(str)) {
+    return  true;
+  }else{
+    return false;
+  }
+}
 
 /* Step 23
  *
@@ -279,6 +358,13 @@
  *
  */
 
+function drink(beer) {
+  if (beer !== beers.name){
+    return false;
+  }else{
+    return "This " + beers.name + " is " + beers.description + ".";
+ }
+}
 
 /* Step 24
  *
